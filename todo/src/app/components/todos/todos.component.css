@@ -1,0 +1,116 @@
+.todo {
+	display: flex;
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+	background-color: #EEE;
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+	font-size: 30px;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+	font-size: 30px;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+.todo-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+
+.todo-submit {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	border-radius:10%;
+	font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+	background-color: #458d91;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 2rem;
+	font-weight: 700;
+} 
+
+.todo-submit:hover {
+color: black;
+    background-color: rgb(244, 151, 39);
+
+
+}
+  
+
+.delete {
+	align-items: center;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: .375em;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: black;
+	cursor: pointer;
+	display: inline-flex;
+	font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 1rem;
+	height: 2.5em;
+	justify-content: center;
+	line-height: 1.5;
+	padding: calc(.5em - 1px) 1em;
+	position: relative;
+	text-align: center;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: top;
+	white-space: nowrap;
+  }
+  
+  .delete:active {
+	border-color: #4a4a4a;
+	outline: 0;
+  }
+  
+  .delete:focus {
+	border-color: #485fc7;
+	outline: 0;
+  }
+  
+  .delete:hover {
+	border-color: #b5b5b5;
+  }
+  
+  .delete:focus:not(:active) {
+	box-shadow: rgba(72, 95, 199, .25) 0 0 0 .125em;
+  }
+
+
